@@ -1,0 +1,5 @@
+Maven Release Plugin:
+    Incluir dependência no pom e incluir a tag do scm, neste caso: scm:git:git@github.com:twolkerl/sfg-pet-clinic.git
+
+    mvn release:prepare
+    
