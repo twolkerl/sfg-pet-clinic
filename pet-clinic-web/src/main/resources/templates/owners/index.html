@@ -6,5 +6,22 @@
 </head>
 <body>
     <h1 th:text="'Lista de Donos'">Lista de Donos...</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Primeiro Nome</th>
+            <th>Último Nome</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="owner : ${owners}">
+            <td th:text="${owner?.id}">1</td>
+            <td th:text="${owner?.firstName}">João</td>
+            <td th:text="${owner?.lastName}">Silva</td>
+        </tr>
+        </tbody>
+    </table>
 </body>
 </html>
